@@ -1,0 +1,1087 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('assets/fonts/font/fontello.eot?83601822');
+    src: url('assets/fonts/font/fontello.eot?83601822#iefix') format('embedded-opentype'),
+         url('assets/fonts/font/fontello.woff2?83601822') format('woff2'),
+         url('assets/fonts/font/fontello.woff?83601822') format('woff'),
+         url('assets/fonts/font/fontello.ttf?83601822') format('truetype'),
+         url('assets/fonts/font/fontello.svg?83601822#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+  .icon-login:before { content: '\e800'; } /* '' */
+  .icon-upload-cloud:before { content: '\f0ee'; } /* '' */
+  .icon-dollar:before { content: '\f155'; } /* '' */
+
+
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Malaga';
+    src: url(./assets/fonts/Malaga/MalagaOT-RegItalic.otf);
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+}
+
+p,h1,h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #535353;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+} 
+
+.header ul li {
+    display: inline-block;
+}
+
+.header {
+    background: url("assets/images/background.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.container-header {
+    display: flex;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 320px;
+    order: 1;
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+} 
+
+.logo-text {
+    margin-top: 2.35em;
+    font-size: 1.9em;
+    margin-left: 0.02em;
+    color: #858688;
+}
+
+.logo-text span {
+    color: #5b4295;
+} 
+
+.logo-language {
+    margin-top: 0.78em;
+    letter-spacing: 0.1px;
+    color: #858688;
+    font-size: 0.89em;
+    padding: 0;
+}
+
+.logo-language li:not(:first-child) {
+    letter-spacing: 0.1px;
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+}
+
+.logo-language li:hover {
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+
+li:hover {
+    transform: matrix(1.05,0,0,1.05,0,0);
+    transition-duration: .2s;
+}
+
+hr {
+    transform: rotate(113deg);
+    color: #858688;
+    width: 9px;
+    display: inline-block;
+    margin: 4px;
+    margin-bottom: 4px;
+}
+
+.menu {
+    flex-grow: 1;
+    order: 2;
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    color: #454545;
+    margin-top: 5.25em;
+}
+
+.menu ul {
+    text-align: right;
+    margin-right: 0.5em;
+    font-size: 1em;
+}
+
+.menu li {
+    margin-left: 1.45em;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #454545;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+.hamburger-button:hover {
+    transform: matrix(1.05,0,0,1.05,0,0);
+    transition-duration: .2s;
+}
+
+.registration {
+    width: 252px;
+    order: 3;
+    color: #454545;
+}
+
+.registration i {
+    color: #582c7e;
+    margin-right: 0.2em;
+}
+
+.login-inline {
+    margin-left: 3.9em;
+    margin-top: 5.24em;
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 1em;
+
+}
+
+.btn-sing {
+    margin-left: 1.3em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.35em 1.4em calc(.4em + 3px);
+    border-radius: 30px;
+    background: #582c7e;
+  }
+
+.btn-sing:hover {
+    transform: matrix(1.05,0,0,1.05,0,0);
+    background: linear-gradient(#582c7e, #647bce);
+    box-shadow: 0 10px 20px rgba(76, 0, 139, 0.614);
+    transition-duration: .2s;
+}  
+  
+.create-acc {
+    width: 100%;
+    order: 4;
+    text-align: center;
+    padding-bottom: 14.2em;
+}  
+
+.create-acc h1 {
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 3.8em;
+    margin-top: 2.18em;
+    color: #7a7a79;
+}
+
+.create-acc h3 {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 2.3em;
+    margin-top: -0.27em;
+    color: #7a7a7a;
+}
+
+.create-acc h3 span {
+    color: #fc6b6d;
+}
+
+.btn-create-block {
+    display: block;
+    background: url("assets/images/fake-lake.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4.1em;
+}
+
+.btn-create {
+    display: inline-block;
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.65em 3.5em calc(.75em + 3px);
+    border-radius: 30px;
+    background: #5f2f6a;
+    margin-bottom: 2.5em;
+  }
+
+  .btn-create:hover {
+    background: linear-gradient(#646c92, #5f2f6a);
+    box-shadow: 0 5px 15px rgba(4, 0, 236, 0.6);
+    transition-duration: .2s;
+}  
+
+.btn-circle {
+    display: inline-block;
+    background: url("assets/images/Ellipse\ 1@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3em;
+    width: 3em;
+    margin-bottom: -1.2em;
+    margin-left: 1.05em;
+}
+
+.btn-circle:hover {
+    transform: matrix(1.05,0,0,1.05,0,0);
+    transition-duration: .2s;
+}  
+
+.icon-apple {
+    background: url("assets/images/@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2.9em;
+    width: 3em;
+}
+
+.icon-trigon {
+    background: url("assets/images/Layer\ 9@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3em;
+    width: 3.1em;
+}
+
+.social-block {
+    display: block;
+    position: fixed;
+    top: 323px;
+    right: 34px;
+    width: 20px;
+    height: 100px;
+}
+
+.social-block img {
+    margin-bottom: 13px;
+}
+
+.social-block img:hover {
+    transform: matrix(1.1,0,0,1.1,0,0);
+    transition-duration: .2s;
+}
+ 
+.row {
+    display: flex;
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    width: 74%;
+    margin: 0 auto;
+}
+
+.header-img {
+    margin-top: 4.2em;
+}
+
+.row h3{
+    font-size: 1.9em;
+    margin-left: 0.24em;
+    color: #555555;
+}
+
+.row p{
+    font-size: 1.155em;
+    margin-left: 0.32em;
+    margin-top: -0.6em;
+    color: #555555;
+}
+
+.img {
+    display: inline-block;
+    height: 4.1em;
+    width: 4em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titl {
+    display: inline-block;
+}
+
+.plas {
+    background: url("assets/images/Layer\ 15@1X.png");
+    margin-left: -0.7em;
+    background-position-y: -309%;
+}
+
+.lock {
+    background: url("assets/images/Layer\ 14@1X.png");
+    width: 5em;
+    margin-left: -1.7em;
+}
+
+.key {
+    background: url("assets/images/Layer\ 13@1X.png");
+    margin-left: -1em;
+    background-position-y: 0.7em;
+    background-repeat: no-repeat;
+}
+
+.text-col {
+    margin-top: 1.7em;
+    font-size: 0.9em;
+}
+
+.left {
+    width: 33%;
+    padding-left: 5.3em;
+}
+
+.center {
+    width: 33%;
+    padding-left: 4.4em;
+}
+
+.right {
+    width: 33%;
+    padding-left: 4.2em;
+}
+
+.security-block {
+    width: 62%;
+    margin-top: 6.4em;
+    text-align: right;
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+}
+
+.security-block h3 {    
+    font-size: 3.8em;
+    margin-right: 0.2em;
+    color: #555555;
+
+}
+
+.security-block p {
+    font-size: 1.54em;
+    margin-right: 0.46em;
+    color: #555555;
+    line-height: 0.9em;
+}
+
+.security-block p span{
+    color: #f65151;
+}
+
+.learn-block {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    width: 72.65%;
+    display: flex;
+    margin-top: 1.7em;
+    justify-content: flex-end;
+}
+
+.learn-block div {
+    display: flex;
+    border: 1px solid #555555;
+    width: 20.7em;
+    border-radius: 3em;
+    height: 3.8em;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.row-label {
+    background: url("assets/images/Layer\ 16@1X.png");
+    height: 4.1em;
+    width: 52.5%;
+    background-size: 100%;
+    margin-top: 2.4em;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.fon-gray {
+    background: url("assets/images/blog-bg.png") no-repeat;
+    width: 100%;
+    background-position-y: 7.2em;
+    background-size: 100%;
+}
+
+.computer {
+    height: 100%;
+    background: url("assets/images/NOT\ FOR\ USE!!!!!@1X.png");
+    width: 100%;
+    margin-top: 2.6em;
+    background-repeat: no-repeat;    
+    background-position-x: 78%;
+}
+
+.text-new-email {
+    display: flex;
+    width: 52%;
+    font-family: 'Malaga', sans-serif;
+    font-size: 1.533em;
+    padding-left: 20.2%;
+}
+
+.col-point {
+    display: flex;
+    width: 13px;
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.col-point img {
+    margin-top: 11px;
+}
+
+.text-new-email p {
+    margin-top: 1.88%;
+    margin-left: 1.1em;
+    line-height: 1.266em;
+    color: #101010;
+}
+
+.text-new-email span {
+    font-size: 0.66em;
+    color: #727272;
+}
+
+.text-devise {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    padding-top: 6.26em;
+    width: 61.5%;
+    text-align: right;
+    padding-bottom: 209px;
+}
+
+.text-devise h3 {
+    color: #535353;
+    font-size: 2.27em;
+}
+
+.text-devise p {
+    color: rgba(149, 147, 147, 255);
+    padding-top: 0.45em;
+    font-size: 1.023em;
+    padding-right: 0.3em;
+    line-height: 1.4em;
+}
+
+.text-devise img {
+    padding-top: 1.88em;
+    padding-left: 0.6em;
+}
+
+.text-devise img:hover {
+    transform: matrix(1.05,0,0,1.05,0,0);
+    transition-duration: .2s;
+}
+
+.pay {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    text-align: center;
+}
+
+.pay h3 {
+    color: #535353;
+    font-size: 2.298em;
+    padding-top: 0.31em;
+}
+
+.pay p {
+    color: #7c7c7c;
+    font-size: 1.84em;
+    line-height: 0.8em;
+}
+
+.btn-pay-block {
+    display: block;
+    margin-top: 2.78em;
+}
+
+.btn-upgrade {
+    display: inline-block;
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 1.17em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.66em 1.3em calc(.75em + 3px);
+    border-radius: 30px;
+    background: #5f2f6a;
+}
+
+.btn-upgrade:hover {
+    background: linear-gradient(#646c92, #5f2f6a);
+    box-shadow: 0 5px 15px #5f2f6a;
+    transition-duration: .2s;
+}
+
+.btn-donate {
+    display: inline-block;
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 1.17em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.66em 2.1em calc(.75em + 3px);
+    border-radius: 30px;
+    background: #40aae3;
+    margin-left: 2.4em;
+}
+
+.btn-donate:hover {
+    background: linear-gradient(#5e7bea92, #40aae3);
+    box-shadow: 0 5px 15px #38b7e1;
+    transition-duration: .2s;
+}
+
+.footer {
+    width: 77.8%;
+    margin-top: 5%;
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    color: #535353;
+}
+
+.help-text {
+    padding-top: 0.8%;
+    padding-right: 1.7%;
+    text-align: right;
+    font-size: 0.89em;
+    color: #535353;
+}
+
+.row-label-footer {
+    background: url("assets/images/Layer_311X.png");
+    height: 4.1em;
+    margin-top: -0.3%;
+    background-repeat: no-repeat;
+    background-position-x: 109.3%;
+}
+
+.contacts {
+    padding-top: 13%;
+    display: flex;
+    color: #535353;
+}
+
+.emails {
+    border-left: 1px solid #b9b9b9;
+    margin-left: 14.3%;
+    padding-left: 1.3%;
+    font-size: 0.894em;
+    line-height: 1.6em;
+    color: #535353;
+}
+
+.emails p:nth-child(4) {
+    padding-top: 26px;
+    color: #535353;
+}
+
+.footer span {
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    color: #535353;
+}
+
+.footer span:hover {
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+
+.contacts h3 {
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    font-size: 1.29em;
+    padding-bottom: 1.35em;
+    color: #535353;
+}
+
+.company {
+    padding-left: 29.6%;
+    font-size: 0.894em;
+    line-height: 1.64em;
+    text-align: right;
+    color: #535353;
+}
+
+.company p:hover {
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+
+.legal {
+    padding-left: 8.34%;
+    font-size: 0.894em;
+    line-height: 1.64em;
+    text-align: right;
+    color: #535353;
+}
+
+.legal p:hover {
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+
+.neutronmail {
+    padding-left: 6.84%;
+    font-size: 0.894em;
+    line-height: 1.64em;
+    text-align: right;
+    color: #535353;
+}
+
+.neutronmail p:hover {
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+
+.footer-top-block {
+    border-top: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+}
+
+.Breadcrumbs {
+    margin-left: 14.3%;
+    margin-top:  5.22%;
+    font-size: 0.894em;
+    color: #535353;
+}
+
+.Breadcrumbs ul li{
+    display: inline-block;
+}
+
+.name-organization {
+    margin-left: 14.3%;
+    font-size: 0.765em;
+    margin-top: 0.7em;
+    color: rgba(92, 92, 92, 255);
+    margin-bottom: 30px;
+    color: #535353;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 918px;
+    right: 36.3%;
+    width: 1px;
+    height: 435px;
+    background-color: #b9b9b9;
+}
+
+.vertical-line-small {
+    position: absolute;
+    top: 787px;
+    left: 39.65%;
+    width: 1px;
+    height: 208px;
+    background-color: #b9b9b9;
+}
+
+.horisontal-line {
+    position: absolute;
+    top: 1381px;
+    left: 0px;
+    width: 58%;
+    height: 1px;
+    background-color: #b9b9b9;
+    z-index: -1;
+}
+
+.horisontal-line-small {
+    position: absolute;
+    top: 917px;
+    right: 0px;
+    width: 10.6%;
+    height: 1px;
+    background-color: #b9b9b9;
+}
+
+.horisontal-line-bottom {
+    position: absolute;
+    top: 2211px;
+    right: 0px;
+    width: 77.8%;
+    height: 1px;
+    background-color: #b9b9b9;
+}
+
+.vertical-line-bottom {
+    position: absolute;
+    top: 2825px;
+    right: 47.4%;
+    width: 1px;
+    height: 317px;
+    background-color: #b9b9b9;
+}
+
+@media only screen and (max-width: 1680px) {
+    .header-img {
+        margin-top: 0;
+    }
+
+    .create-acc {
+        padding-bottom: 10.2em;
+    }
+
+    .footer {
+        width: 95%;
+    }
+
+    .footer-top-block {
+        padding-right: 20px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+    
+    .vertical-line-small {
+        display: none;
+    }
+    
+    .horisontal-line {
+        display: none;
+    }
+    
+    .horisontal-line-small {
+        display: none;
+    }
+
+    .horisontal-line-bottom {
+        display: none;
+    }
+
+    .vertical-line-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1530px) {
+    .row {
+        width: 95%;
+    }
+
+    .left {
+        padding: 0;
+    }
+
+    .security-block {
+        margin-top: 2.4em;
+    }
+}
+
+@media only screen and (max-width: 1443px) {
+    .container-header {
+        width: 95%;
+
+    }
+
+    .logo {
+        width: 270px;
+    } 
+    
+    .registration {
+        width: 260px;
+        order: 3;
+    }
+
+    .create-acc h1 {
+        font-size: 3.2em;
+        margin-top: 1.18em;
+    }
+
+    .emails {
+        margin-left: 4.3%;
+    }
+
+    .company {
+        flex-grow: 1;
+        padding: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 1232px) {
+    .create-acc {
+        padding-bottom: 6.2em;
+    }
+
+    .text-devise {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .row-label {
+        width: 90%;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 1188px) {
+    .create-acc {
+        padding-bottom: 2.2em;
+    }
+
+    .center {
+        width: 33%;
+        padding-left: 1.4em;
+    }
+    
+    .right {
+        width: 33%;
+        padding-left: 1.2em;
+    }
+
+    .text-new-email {
+        width: 76%;
+        padding-left: 3.2%;
+    }
+}
+
+@media only screen and (max-width: 1049px) {
+    .registration {
+        width: 120px;
+        order: 3;
+    }
+    
+    .login-inline {
+        margin-left: 2em;
+    }
+
+    .btn-sing {
+        display: none;
+    }
+
+    .logo-text {
+        margin-top: 0.9em;
+    }
+
+    .menu {
+        margin-top: 2.65em;
+    }
+
+    .login-inline {
+        margin-top: 2.65em;
+    }
+
+    .create-acc h1 {
+        font-size: 2.8em;
+        margin-top: 1.18em;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex-basis: 100%;
+        padding-left: 1.4em;
+    }
+
+    .center {
+        flex-basis: 100%;
+        padding-left: 1.4em;
+    }
+
+    .right {
+        flex-basis: 100%;
+        padding-left: 1.4em;
+    }
+
+    .security-block {
+        width: 90%;
+    }
+
+    .security-block h3 {
+        font-size: 2.8em;
+    }
+
+    .security-block p {
+        font-size: 1em;
+    }
+
+    .row-label-footer {
+        background-size: 100%;
+        background-position-x: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger-button {
+        display: inline-block;
+        background-size: 110%;
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-image: url(assets/images/menu_ham.png);
+        margin-left: 20px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    header .menu {
+        margin-left: 0;
+    }
+
+    .registration {
+        width: 180px;
+        order: 2;
+    }
+
+    .login-inline {
+        display: flex;
+        align-items: center;
+    }
+
+    .login-inline {
+        margin-top: 2.05em;
+    }
+
+    .create-acc h1 {
+        font-size: 2.0em;
+        margin-top: 1.18em;
+    }
+
+    .create-acc h3 {
+        font-size: 1.6em;
+    }
+
+    .social-block {
+        display: none;
+    }
+
+    .computer {
+        background: none;
+    }
+
+    .text-devise {
+        padding-top: 4.26em;
+        padding-bottom: 80px;
+    }
+
+    .pay h3 {
+        font-size: 1.8em;
+    }
+
+    .pay p {
+        font-size: 1.3em;
+    }
+
+    .contacts {
+        padding-top: 13%;
+        flex-wrap: wrap;
+    }
+
+    .company {
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 4.3%;
+        margin-top: 20px;
+    }
+
+    .legal {
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 4.3%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .neutronmail {
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 4.3%;
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex-basis: 100%;
+    }
+
+    .center {
+        flex-basis: 100%;
+    }
+
+    .right {
+        flex-basis: 100%;
+    }
+
+    .btn-upgrade {
+        margin: 0 auto;
+    }
+
+    .btn-donate {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
